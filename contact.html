@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+
+<!--SELVARAJAH Vanujan Ingé 2Z1-->
+
+<html lang="fr">
+
+<head>			<!--Début entete-->
+
+<meta charset="utf-8" />															<!--Pour les caractères-->
+<title>Contactez moi</title>														<!--Nom de la page (affiché sur l'onglet de la page)-->
+<link rel="stylesheet" type="text/css" href="stylecontact.css" media="all"/>		<!--Importation de la feuille css stylecontact.css-->
+
+</head> 		<!-- Fin entete-->
+
+																		
+<body>				<!--Début du corps de la page-->
+
+	<div id="main">																	<!--Début de la partie principale de la page-->
+
+		<header>																	<!--On entre dans l'en-tête-->
+
+			<img src="ia.jpg" style="width: 60%; height: 60%" alt="ESME spécialité I.A">	<!--Affichage dans l'en-tête de l'image info et si l'image n'est pas affichée, on affiche "ESME spécialité Informatique"-->
+
+		</header>
+		
+					<br><br>
+		
+		<nav>																		<!--Barre de navigation du site-->
+		
+			<ul>																	<!--Création d'une liste-->
+				<li><a href="HomeCSS.html">Accueil</a></li>							<!--Lien vers la page d'accueil-->
+				<li><a href="CV.html">CV</a></li>									<!--Lien vers le CV-->
+				<li><a href="#">Projets</a></li>									<!--Lien vers les projets-->
+				<li><a href="contact.html"> Contactez moi</a></li>					<!--Lien vers la page de contact-->
+				
+			</ul>																	<!--Fin de la liste-->
+
+		</nav>
+																					
+		
+	<br><br><br>																	<!--On saute 3 lignes-->
+		
+		<fieldset>																	<!--On délimite physiquement la partie formulaire dans un cadre-->
+
+		<h2>Contactez moi :</h2>	
+
+		<a href="http://www.facebook.fr"><img src="fb.png" alt="facebook" style="border:none; width: 50px; height: 65px;"></a>	 		<!--Création d'un lien vers Facebook-->
+		<a href="http://www.twitter.fr"><img src="twitter.png" alt="twitter" style="border:none; width: 50px; height: 60px;"></a> 		<!--Création d'un lien vers Twitter-->
+		<a href="http://www.linkedin.fr"><img src="linkedin.jpg" alt="linkedin" style="border:none; width: 50px; height: 60px;"></a>	<!--Création d'un lien vers Linkedin-->
+
+			<form method="post">													<!--Création du formulaire -->
+				
+				<br><br>															<!--On saute 2 lignes-->
+				Votre adresse E-mail : 
+				<br><br>										
+				
+				<input type="text" name="mail" placeholder="E-mail">				<!--zone de texte pour l'adresse mail-->
+				<br><br>
+				Objet de la demande : <br><br>
+				<input type="text" name="object" placeholder="Objet">				<!--zone de texte pour l'objet du mail-->
+				<br><br>
+				Votre message :<br><br>
+				<textarea COLS=50 ROWS=6 name=comments></textarea>					<!--zone de texte pour le contenu du mail 50 colonnes, 6 lignes-->
+				<br><br><br>
+				<input type=submit value=Envoyer> 									<!--Bouton submit pour envoyer les données à contactmail.php-->
+				<br><br>
+			
+
+			</form>																	<!--Fin du formulaire-->
+		</fieldset>																	<!--Fin du champ de la partie formulaire de la page-->
+	
+	</div>																			<!--Fin de la partie principale de la page-->
+
+	<footer>																		<!--Pied de page-->
+
+		<br>
+		<div id="copyright">&copy; Selvarajah Vanujan</div>							<!-- Création du logo copyright-->
+		
+	</footer>																		<!--Fin du pied de page-->
+	
+	<br>
+	
+</body>																				<!--Fin du corps de la page-->
+
+</html>

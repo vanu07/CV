@@ -1,0 +1,87 @@
+
+
+body {
+		background-image:url("fond5.png");				/*Image de fond*/
+		background-size: 2500px, 2500px;				/*Taille de l'image de fond*/
+		height:100%;									/*Hauteur du site*/
+}
+
+
+header{
+		margin: 20px;									/*Marges Header*/
+		text-align: center;								/*Aligner le texte*/
+}
+
+
+ul {
+    list-style-type: none;								/*Pour retirer les puces*/
+    overflow: hidden;									/*Le contenu est rogné et aucune barre de défilement n'est affichée.*/
+	background-color: rgba(255, 99, 71, 0.2);			/*Couleur de la liste*/
+	width:100%;											/*Largeur*/
+	margin:auto;										/*marges*/
+}
+
+
+
+li a {
+		float: left;									/*Emplacement*/
+		font-family:sans-serif;							/*Police*/
+		color: black;									/*Couleur du texte dans la barre de navigation*/
+		display: inline-block;							/*Blocs en ligne les uns à côté des autres*/
+		text-align: center;								/*Centrer le texte*/
+		padding: 14px 16px;								/*L'espace du bloc dans lequel il y a le lien pour aller vers une autre page*/
+		font-size:35px;									/*Taille de la police*/
+}
+
+li a:hover, .dropdown:hover .dropbtn, .dropdown-content a:hover {		/*Pour changer la couleur du "bloc" quand on passe la souris dessus*/
+    background-color: rgb(255, 154, 124);
+}
+
+
+
+.row {   				/*La colonne conteneur*/
+    display: flex; 		/*Flex permet de definir la capacite d'un élement flexible à modifier ses dimensions dans l'élement conteneur*/
+}
+
+/* On va donc créer 2 colonnes inégales cote-à-cote*/
+
+.side {								/* Sidebar/Colonne de gauche */
+    flex: 30%;						/*Cette colonne va prendre 30% de la page*/
+    padding: 10px;					/*Marge intérieur*/
+    font-family: sans-serif; 		/*Police*/
+}
+
+/* Main column */
+.main {   							/* Main/La colonne principale*/
+    flex: 70%;						/*Cette colonne va prendre 70% de la page*/
+    padding: 20px;					/*Marge intérieur*/
+    font-family: sans-serif;		/*Police*/
+}
+
+.titre{
+	text-align: center;				/*Centrer le texte*/
+}
+
+
+
+/* Pied de page*/
+footer {
+    padding: 10px;								/*Marge intérieur*/
+    text-align: center;							/*Centrer le texte*/
+    color: black;								/*Couleur du texte*/
+    background-color: rgb(52, 117, 193, 0.4);	/*Couleur du footer*/
+    font-family: sans-serif;					/*Police*/
+}
+
+
+#main{							
+		max-width:1280px;							/*Largeur maximale de la partie principale de la page*/
+		min-height:100%;							/*Hauteur minimale de la partie principale de la page*/
+		margin:auto;								/*Marge extérieur equitables*/
+		position:relative;							/*Position relative de la partie principale*/
+}
+
+*{
+margin:0;
+padding:0;
+}
